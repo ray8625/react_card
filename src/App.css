@@ -1,0 +1,46 @@
+
+.heading{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.container{
+  margin: 20px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 16px;
+}
+
+.card{
+  position: relative;
+}
+
+.card img{
+  display: block;
+}
+
+.card .front{
+  transform: rotateY(90deg);
+  transition: all ease-in .2s;
+  position: absolute;
+}
+
+.flipped .front{
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+
+.card .rear{
+  transition: all ease-in .2s;
+  transition-delay: .2s;
+  cursor: pointer;
+}
+
+.flipped .rear{
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
