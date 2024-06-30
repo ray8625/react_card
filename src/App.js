@@ -76,6 +76,7 @@ function App() {
     shuffleCards();
   },[])
 
+  /* 按鈕判斷 */
   const onClick = (card) => {
     if(!disable){
       setClickRe(card.id);
