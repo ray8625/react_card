@@ -104,7 +104,7 @@ function App() {
         {cards.map(card=>(
           <div className={`card ${card.matched || card===firstChoice || card===secondChoice?"flipped":""}`} key={card.id} onClick={()=>{onClick(card)}}>
             <img className="front" src={card.src} width={300}/>
-            <div className="rear" style={{ width: "300px" , height: "228px", backgroundImage: "linear-gradient(to top, #fddb92 0%, #d1fdff 100%)"}}></div>
+            <div className="rear" style={{ width: "300px" , height: "228px", background: "linear-gradient(to top, #fddb92 0%, #d1fdff 100%)"}}></div>
           </div>
         ))}
       </div>
