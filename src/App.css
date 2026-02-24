@@ -38,6 +38,7 @@
   transition: all ease-in .2s;
   transition-delay: .2s;
   cursor: pointer;
+  background-image: linear-gradient(to top, rgb(253, 219, 146), rgb(209, 253, 255));
 }
 
 .flipped .rear{
