@@ -104,7 +104,7 @@ function App() {
         {cards.map(card=>(
           <div className={`card ${card.matched || card===firstChoice || card===secondChoice?"flipped":""}`} key={card.id} onClick={()=>{onClick(card)}}>
             <img className="front" src={card.src} width={300} alt={`card-${card.id}`} />
-            <div className="rear" style={{ width: "300px" , height: "228px",  backgroundColor: "red"}}></div>
+            <div className="rear" style={{ width: "300px" , height: "228px"}}></div>
           </div>
         ))}
       </div>
@@ -113,4 +113,5 @@ function App() {
 }
 
 export default App;
+
 
